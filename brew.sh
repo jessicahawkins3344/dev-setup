@@ -61,13 +61,7 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
-
-# Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
+brew install homebrew/php/php56 --with-gmp
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
@@ -98,7 +92,6 @@ brew install xz
 # Install other useful binaries.
 brew install ack
 brew install dark-mode
-#brew install exiv2
 brew install git
 brew install git-lfs
 brew install git-flow
@@ -116,12 +109,9 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 
-# Install Heroku
-brew install heroku-toolbelt
-heroku update
-
 # Install Cask
 brew install caskroom/cask/brew-cask
+brew update caskroom/cask/brew-cask
 
 # Core casks
 brew cask install --appdir="/Applications" alfred
@@ -129,22 +119,13 @@ brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
 
 # Development tool casks
-brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" heroku-toolbelt
 
 # Misc casks
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" evernote
 
-#Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
 
 # Link cask apps to Alfred
 brew cask alfred link

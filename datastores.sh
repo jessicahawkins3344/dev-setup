@@ -32,3 +32,21 @@ brew cask install --appdir="/Applications" mysqlworkbench
 
 # Remove outdated versions from the cellar.
 brew cleanup
+# Make sure we’re using the latest Homebrew.
+brew update
+
+# Install node
+brew install node
+
+# Remove outdated versions from the cellar.
+brew cleanup
+
+npm install -g gulp
+npm install -g bower
+npm install -g coffee-script
+npm install -g grunt-cli
+npm install -g jshint
+npm install -g less
+
+gem install jekyll
+
